@@ -14,14 +14,14 @@ public class UserService {
 	private LoginLogDao loginLogDao;
 
 
-	public boolean hasMatchUser(String userName, String password) {
-		int matchCount =userDao.getMatchCount(userName, password);
+	public boolean hasMatchUser(String userNum, String password) {
+		int matchCount =userDao.getMatchCount(userNum, password);
 		return matchCount > 0;
 	}
 
-	public User findUserByUserName(String userName) {
+	public User findUserByUserNum(String userNum) {
 
-		return userDao.findUserByUserName(userName);
+		return userDao.findUserByUserNum(userNum);
 	}
 	@Transactional
 	public void createUser(User user){

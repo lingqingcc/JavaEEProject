@@ -16,14 +16,28 @@
     <c:if test="${!empty error}">
         <font color="red"><c:out value="${error}" /></font>
     </c:if>
-    <form action="<c:url value="create.html"/>" method="post">
-        用户名：
+    <h1>用户注册</h1>
+    <form action="create.html" method="post">
+        用户名:
         <input type="text" name="userName">
         <br>
-        密 码：
+        年龄：
+        <input type="text" name="userAge">
+        <br>
+        <label>性别：</label>
+        <label>男</label>
+        <input type="radio" value="男"  name="userSex" />
+        <label>女</label>
+        <input type="radio" value="女"  name="userSex" />
+        <br>
+        账号：
+        <input type="text" name="userNum">
+        <br>
+        密码：
         <input type="password" name="password">
         <br>
         <input type="submit" value="注册" />
     </form>
+
 </body>
 </html>

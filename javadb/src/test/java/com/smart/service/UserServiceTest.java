@@ -16,17 +16,17 @@ public class UserServiceTest extends AbstractTransactionalTestNGSpringContextTes
 
 	@Test
 	public void testHasMatchUser() {
-		boolean b1 = userService.hasMatchUser("admin", "123456");
-		boolean b2 = userService.hasMatchUser("admin", "1111");
+		boolean b1 = userService.hasMatchUser("201608020200", "123456");
+		boolean b2 = userService.hasMatchUser("201608020200", "1111");
 		assertTrue(b1);
 		assertTrue(!b2);
 	}
 
 	@Test
-     public void testFindUserByUserName()throws Exception{
+     public void testFindUserByUserNum()throws Exception{
         for(int i =0; i< 100;i++) {
-            User user = userService.findUserByUserName("admin");
-            assertEquals(user.getUserName(), "admin");
+            User user = userService.findUserByUserNum("201608020222");
+            assertEquals(user.getUserNum(), "201608020222");
         }
 
     }
@@ -34,7 +34,7 @@ public class UserServiceTest extends AbstractTransactionalTestNGSpringContextTes
 
 	@Test
 	public void testAddLoginLog() {
-		User user = userService.findUserByUserName("admin");
+		User user = userService.findUserByUserNum("201608020222");
 		user.setUserId(1);
 		user.setUserName("admin");
 		user.setLastIp("192.168.12.7");

@@ -11,10 +11,10 @@
 		</c:if>
 		<h1>中心机房登陆系统</h1>
 		<form action="<c:url value="loginCheck.html"/>" method="post">
-			用户名：
-			<input type="text" name="userName">
+			账号：
+			<input type="text" name="userNum">
 			<br>
-			密 码&nbsp&nbsp&nbsp：
+			密码：
 			<input type="password" name="password">
 			<br>
 			<input type="submit" value="登录" />

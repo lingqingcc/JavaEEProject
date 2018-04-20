@@ -1,7 +1,7 @@
 package com.smart.web;
 
 public class LoginCommand {
-	private String userName;
+	private String userNum;
 
 	private String password;
 
@@ -13,11 +13,11 @@ public class LoginCommand {
 		this.password = password;
 	}
 
-	public String getUserName() {
-		return userName;
+	public String getUserNum() {
+		return userNum;
 	}
 
-	public void setUserName(String userName) {
-		this.userName = userName;
+	public void setUserNum(String userNum) {
+		this.userNum = userNum;
 	}
 }

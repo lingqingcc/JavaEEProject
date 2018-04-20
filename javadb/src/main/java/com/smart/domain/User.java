@@ -6,7 +6,13 @@ import java.util.Date;
 public class User implements Serializable{
 	private int userId;
 
+	private String userNum;
+
 	private String userName;
+
+	private String userSex;
+
+	private int userAge;
 
 	private String password;
 
@@ -62,5 +68,29 @@ public class User implements Serializable{
 
 	public void setCredits(int credits) {
 		this.credits = credits;
+	}
+
+	public int getUserAge() {
+		return userAge;
+	}
+
+	public void setUserAge(int userAge) {
+		this.userAge = userAge;
+	}
+
+	public String getUserNum() {
+		return userNum;
+	}
+
+	public void setUserNum(String userNum) {
+		this.userNum = userNum;
+	}
+
+	public String getUserSex() {
+		return userSex;
+	}
+
+	public void setUserSex(String userSex) {
+		this.userSex = userSex;
 	}
 }

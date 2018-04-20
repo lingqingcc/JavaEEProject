@@ -49,13 +49,12 @@ public class LoginController{
 	 */
 	@RequestMapping(value = "/loginCheck.html")
 	public ModelAndView LoginCheck(HttpServletRequest request,LoginCommand loginCommand){
-		boolean isValidUser =  userService.hasMatchUser(loginCommand.getUserName(),
+		boolean isValidUser =  userService.hasMatchUser(loginCommand.getUserNum(),
 				loginCommand.getPassword());
 		if (!isValidUser) {
 			return new ModelAndView("login", "error", "用户名或密码错误。");
 		} else {
-			User user = userService.findUserByUserName(loginCommand
-					.getUserName());
+			User user = userService.findUserByUserNum(loginCommand.getUserNum());
 			user.setLastIp(request.getLocalAddr());
 			user.setLastVisit(new Date());
 			userService.loginSuccess(user);
