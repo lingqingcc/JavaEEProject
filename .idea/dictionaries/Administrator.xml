@@ -2,10 +2,12 @@
   <dictionary name="Administrator">
     <words>
       <w>createsuccess</w>
+      <w>deleteuser</w>
       <w>javadb</w>
       <w>javaweb</w>
       <w>jstl</w>
       <w>mortbay</w>
+      <w>reviseuser</w>
       <w>sampledb</w>
     </words>
   </dictionary>

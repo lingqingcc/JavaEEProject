@@ -5,6 +5,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
+import java.sql.ResultSet;
+
 @Repository
 public class UserDao {
 	private JdbcTemplate jdbcTemplate;
@@ -29,7 +31,7 @@ public class UserDao {
 				+ " FROM t_user WHERE user_num =? ";
 		final User user = new User();
 		jdbcTemplate.query(sqlStr, new Object[] { userNum },
-				rs -> {
+				(ResultSet rs) -> {
 					user.setUserId(rs.getInt("user_id"));
 					user.setUserNum(userNum);
 					user.setUserName(rs.getString("user_name"));

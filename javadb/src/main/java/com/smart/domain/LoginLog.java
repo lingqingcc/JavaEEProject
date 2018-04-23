@@ -7,6 +7,10 @@ public class LoginLog implements Serializable{
 
 	private int userId;
 
+	private String userNum;
+
+	private String userName;
+
 	private String ip;
 
 	private Date loginDate;
@@ -43,4 +47,19 @@ public class LoginLog implements Serializable{
 		this.userId = userId;
 	}
 
+	public String getUserNum() {
+		return userNum;
+	}
+
+	public void setUserNum(String userNum) {
+		this.userNum = userNum;
+	}
+
+	public String getUserName() {
+		return userName;
+	}
+
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
 }

@@ -1,4 +1,4 @@
-package com.smart.web;
+package com.smart.domain;
 
 public class LoginCommand {
 	private String userNum;
