@@ -3,6 +3,8 @@
     <words>
       <w>createsuccess</w>
       <w>deleteuser</w>
+      <w>getuser</w>
+      <w>getuserid</w>
       <w>javadb</w>
       <w>javaweb</w>
       <w>jstl</w>

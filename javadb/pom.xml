@@ -55,5 +55,4 @@
             <version>${hibernateVersion}</version>
         </dependency>
     </dependencies>
-
 </project>

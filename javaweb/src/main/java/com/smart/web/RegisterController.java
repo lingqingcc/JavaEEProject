@@ -19,6 +19,13 @@ public class RegisterController {
         return "login";
     }
     /*
+    跳转至信息管理页面
+     */
+    @RequestMapping(value = "/manage.html")
+    public String Manage(){
+        return "manage";
+    }
+    /*
     跳转至注册页面
      */
     @RequestMapping(value = "/register.html")

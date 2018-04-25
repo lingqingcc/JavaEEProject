@@ -21,5 +21,6 @@
 			<input type="reset" value="重置" />
 		</form>
 		<a href="register.html" methods="GET">注册</a>
+		<a href="manage.html" methods="GET">信息管理</a>
 	</body>
 </html>
