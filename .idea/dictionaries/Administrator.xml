@@ -1,7 +1,9 @@
 <component name="ProjectDictionaryState">
   <dictionary name="Administrator">
     <words>
+      <w>adduser</w>
       <w>createsuccess</w>
+      <w>darkblue</w>
       <w>deleteuser</w>
       <w>getuser</w>
       <w>getuserid</w>
@@ -9,6 +11,10 @@
       <w>javaweb</w>
       <w>jstl</w>
       <w>mortbay</w>
+      <w>mymessage</w>
+      <w>nane</w>
+      <w>onload</w>
+      <w>onmouse</w>
       <w>reviseuser</w>
       <w>sampledb</w>
     </words>

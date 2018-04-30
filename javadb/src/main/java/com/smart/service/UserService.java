@@ -14,7 +14,7 @@ public class UserService {
 
     private LoginLogDao loginLogDao;
 
-    public boolean hasMatchUser(String userNum, String password) {
+    public boolean hasMatchUser(String userNum, String password){
         int matchCount =userDao.getMatchCount(userNum, password);
         return matchCount > 0;
     }

@@ -5,8 +5,9 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
 	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
     <welcome-file-list>
-        <welcome-file>/jsp/login.jsp</welcome-file>
+        <welcome-file>/jsp/manage.jsp</welcome-file>
     </welcome-file-list>
+    <!--对业务层的依赖-->
     <context-param>
         <param-name>contextConfigLocation</param-name>
         <param-value>classpath:smart-context.xml</param-value>
@@ -45,5 +46,18 @@
     <servlet-mapping>
         <servlet-name>smart</servlet-name>
         <url-pattern>*.html</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.jpg</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.js</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.css</url-pattern>
     </servlet-mapping>
 </web-app>

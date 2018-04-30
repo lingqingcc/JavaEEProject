@@ -21,7 +21,7 @@ public class RegisterController {
     /*
     跳转至信息管理页面
      */
-    @RequestMapping(value = "/manage.html")
+    @RequestMapping(value = "manage.html")
     public String Manage(){
         return "manage";
     }

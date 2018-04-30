@@ -13,7 +13,9 @@ import java.util.List;
 @Service
 public class ManageService {
     private ManageDao manageDao;
-
+    /*
+    获取全部用户信息
+     */
     public List gainUser() {
         List list=new ArrayList<User>();
         SqlRowSet sr=manageDao.ManageSelect();
@@ -30,8 +32,24 @@ public class ManageService {
         }
         return list;
     }
-    public User QueryUser(String userNum){
-        return manageDao.QueryUser(userNum);
+    /*
+    修改用户信息
+     */
+    public void ReviseUser(User user){
+        manageDao.ReviseUser(user);
+    }
+    /*
+    按帐号查找用户
+     */
+    public User QueryNum(String userNum){
+        return manageDao.QueryNum(userNum);
+    }
+
+    /*
+   按用户名查找用户
+    */
+    public User QueryName(String userName){
+        return manageDao.QueryName(userName);
     }
     @Transactional
     public void deleteUser(final String userId){

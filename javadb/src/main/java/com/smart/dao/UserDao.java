@@ -23,7 +23,7 @@ public class UserDao {
 	}
 	public int getMatchCount(String userNum, String password) {
 
-		return jdbcTemplate.queryForObject(MATCH_COUNT_SQL, new Object[]{userNum, password}, Integer.class);
+		return jdbcTemplate.queryForObject(MATCH_COUNT_SQL, new Object[]{userNum, password},Integer.class);
 	}
 
 	public User findUserByUserNum(final String userNum) {
@@ -43,8 +43,7 @@ public class UserDao {
 	}
 	public void updateLoginInfo(User user) {
 		jdbcTemplate.update(UPDATE_LOGIN_INFO_SQL, new Object[] {
-				user.getLastVisit(),
-				user.getLastIp(),user.getCredits(),user.getUserId()});
+				user.getLastVisit(), user.getLastIp(),user.getCredits(),user.getUserId()});
 	}
 
 	@Autowired
