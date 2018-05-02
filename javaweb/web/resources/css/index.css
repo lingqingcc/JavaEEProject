@@ -1,0 +1,153 @@
+body{
+    overflow: hidden;
+    font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,\5FAE软雅黑,Arial,sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #666;
+}
+.main_div{
+    top: auto;
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+    height: auto;
+    zoom: 1;
+    display: block;
+}
+.main_top{
+    color: #fff;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 24px;
+    font-weight: 700;
+    background-image: linear-gradient(90deg,#1383d5,#00b4aa);
+}
+.main_body{
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+    height: auto;
+    zoom: 1;
+    display: block;
+}
+.main_menu{
+    float: left;
+    flex: 0 0 auto;
+    display: block;
+    width: 15%;
+    border-right:1px  solid  black;
+}
+.menu_li{
+    height: 42px;
+    line-height: 42px;
+    width: 100%;
+}
+.main_right{
+    float: right;
+    flex: 0 0 auto;
+    display: block;
+    width: 84.5%;
+    border-top:1px  solid  black;
+}
+.main_table,.main_table_tb{
+    width: 100%;
+    height: auto;
+}
+.table_up{
+    height: 60px;
+    padding: 10px;
+    border-bottom:1px  solid  #DBDBDB;
+}
+.table_up_text{
+    float: left;
+    width: 40%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 15px;
+}
+.table_up_bu{
+    float:right;
+    width: 10%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 15px;
+}
+td,th{
+    text-align: center;
+    word-break:keep-all;
+    white-space:nowrap;
+    overflow:hidden;
+}
+.table-body{
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+    font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,\5FAE软雅黑,Arial,sans-serif;
+    border-bottom:1px  solid  #DBDBDB;
+}
+span{
+    padding: 8px;
+    display: inline-block;
+    height: 18px;
+    line-height: 18px;
+    width: auto;
+    border-radius: 10px;
+    color: white;
+    background: #1383d5;
+}
+input{
+    border: 1px solid #DBDBDB;
+    border-radius:6px;
+    outline:none;
+    height: 30px;
+}
+.revise{
+    width: 100%;
+    height: auto;
+}
+.revise_re{
+    position: relative;
+    padding: 10px 100px;
+    width: 30%;
+    height: auto;
+    left: 25%;
+    border: 1px solid #DBDBDB;
+}
+.input_text{
+    width: 80%;
+    height: 40px;
+    font-size: 15px;
+}
+.login_page{
+    top:50px;
+    position: relative;
+    width: 40%;
+    left: 25%;
+    padding: 50px;
+    height:auto;
+    border: 1px solid #DBDBDB;
+    border-radius:10px;
+    background: white;
+}
+.login_bg{
+    height:80%;
+    width:100%;
+    background:url("/resources/img/bg-banner.jpg");
+    background-size: 100%;
+}
+.register_page{
+    width: 30%;
+    height: auto;
+    padding: 5% 35%;
+    font-size: 15px;
+
+}
+.main_button{
+    width: 60px;
+    border-radius:10px;
+    color: white;
+    background: #1383d5;
+}
