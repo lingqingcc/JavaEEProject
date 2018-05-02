@@ -22,7 +22,6 @@ public class UserDao {
 		jdbcTemplate.update(INSERT_USER_SQL, args);
 	}
 	public int getMatchCount(String userNum, String password) {
-
 		return jdbcTemplate.queryForObject(MATCH_COUNT_SQL, new Object[]{userNum, password},Integer.class);
 	}
 

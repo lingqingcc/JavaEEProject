@@ -2,10 +2,11 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
 	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
 	   xmlns:context="http://www.springframework.org/schema/context"
+	   xmlns:mvc="http://www.springframework.org/schema/mvc"
 	   xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
        http://www.springframework.org/schema/context 
-       http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+       http://www.springframework.org/schema/context/spring-context-4.0.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 	<!-- 扫描web包，应用Spring的注解 -->
 	<context:component-scan base-package="com.smart.web"/>
 
@@ -15,6 +16,13 @@
 		p:viewClass="org.springframework.web.servlet.view.JstlView" 
 		p:prefix="/jsp/"
 		p:suffix=".jsp"/>
+	<!--拦截器配置-->
+	<mvc:interceptors>
+		<mvc:interceptor>
+			<mvc:mapping path="*.html"/>
+			<bean class="com.smart.intercept.InterceptRe"/>
+		</mvc:interceptor>
+	</mvc:interceptors>
 	<!--
 		<mvc:resources mapping="/styles/**" location="/resources/css/"/>
 	<mvc:resources mapping="/scripts/**" location="/resources/js/"/>

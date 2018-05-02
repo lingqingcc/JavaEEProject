@@ -9,7 +9,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>中心机房管理系统</title>
+    <title>中心机房后台管理系统</title>
     <link href="/resources/css/index.css" rel="stylesheet" type="text/css" />
     <link href="/resources/css/addUser.css" rel="stylesheet" type="text/css" />
     <script src="/resources/js/addUser.js"></script>
@@ -119,8 +119,8 @@
             <input class="input_text" type="password" name="password">
             <br><br>
             <div style="text-align: right">
-                <input style="background: darkblue;color: white" type="submit" value="添加" />
-                <input style="background: darkblue;color: white" type="button" onclick="closeAdduser()" value="取消">
+                <input class="main_button" type="submit" value="添加" />
+                <input class="main_button" type="button" onclick="closeAdduser()" value="取消">
             </div>
 
         </form>
