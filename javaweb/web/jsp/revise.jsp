@@ -10,7 +10,6 @@
 <head>
     <title>用户信息修改</title>
     <link href="/resources/css/index.css" rel="stylesheet" type="text/css" />
-    <link href="/resources/css/addUser.css" rel="stylesheet" type="text/css" />
     <script src="/resources/js/addUser.js"></script>
 </head>
 <body>

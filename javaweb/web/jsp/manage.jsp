@@ -11,7 +11,6 @@
 <head>
     <title>中心机房后台管理系统</title>
     <link href="/resources/css/index.css" rel="stylesheet" type="text/css" />
-    <link href="/resources/css/addUser.css" rel="stylesheet" type="text/css" />
     <script src="/resources/js/addUser.js"></script>
 </head>
 <body>
