@@ -16,6 +16,7 @@ public class ManageService {
     /*
     获取全部用户信息
      */
+    @Transactional
     public List gainUser() {
         List list=new ArrayList<User>();
         SqlRowSet sr=manageDao.ManageSelect();
@@ -35,12 +36,14 @@ public class ManageService {
     /*
     修改用户信息
      */
+    @Transactional
     public void ReviseUser(User user){
         manageDao.ReviseUser(user);
     }
     /*
     按帐号查找用户
      */
+    @Transactional
     public User QueryNum(String userNum){
         return manageDao.QueryNum(userNum);
     }
@@ -48,6 +51,7 @@ public class ManageService {
     /*
    按用户名查找用户
     */
+    @Transactional
     public User QueryName(String userName){
         return manageDao.QueryName(userName);
     }

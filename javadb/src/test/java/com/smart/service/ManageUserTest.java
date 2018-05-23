@@ -2,10 +2,12 @@ package com.smart.service;
 
 import com.smart.dao.UserDao;
 import com.smart.domain.User;
+import org.springframework.test.context.testng.AbstractTransactionalTestNGSpringContextTests;
+import org.testng.annotations.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
-import org.springframework.test.context.testng.AbstractTransactionalTestNGSpringContextTests;
-import org.testng.annotations.Test;
+
+
 
 import java.util.ArrayList;
 import java.util.List;

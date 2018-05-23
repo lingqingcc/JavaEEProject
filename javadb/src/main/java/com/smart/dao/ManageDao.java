@@ -18,6 +18,7 @@ public class ManageDao {
     private final static String QUERY_USER_NUM_SQL = " SELECT user_id,user_num,user_name,user_sex,user_age,password,credits " + " FROM t_user WHERE user_num =? ";
     private final static String QUERY_USER_NAME_SQL = " SELECT user_id,user_num,user_name,user_sex,user_age,password,credits " + " FROM t_user WHERE user_name =? ";
     private final static String REVISE_USER_SQL= " UPDATE t_user SET " + " user_num=?,user_name=?,user_age=?,user_sex=?,password=?,credits=? WHERE user_id =?";
+
     @Autowired
     public ManageDao(JdbcTemplate jdbcTemplate) {
         this.jdbcTemplate = jdbcTemplate;

@@ -46,6 +46,9 @@ import java.util.List;
         request.getSession().setAttribute("userList",list);
         return new ModelAndView("manage");
     }
+    /*
+    处理添加信息
+     */
     @RequestMapping(value = "/adduser.html",method = RequestMethod.POST)
     public String CreateUser(HttpServletRequest request,User user){
         userService.createUser(user);
